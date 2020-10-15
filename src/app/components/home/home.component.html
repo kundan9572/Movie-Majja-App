@@ -1,0 +1,37 @@
+<div>
+<button (click)="test()">Data</button>
+</div>
+<div *ngFor="let data of mGeneres">
+    <h1>Id {{data.id}}</h1>
+    <p>Name {{data.name}}</p>
+</div>
+
+<div>
+<button (click)="test1()">Upcomin Movie</button>
+</div>
+<div *ngFor="let data1 of upComingMovie">
+    <img src="https://image.tmdb.org/t/p/w185/{{data1.poster_path}}" alt="pic">
+    <h1>Id {{data1.id}}</h1>
+    <h1>adult {{data1.adult}}</h1>
+    <p>Title {{data1.title}}</p>
+    <p>Overview {{data1.overview}}</p>
+    <p>Relese Date {{data1.release_date}}</p>
+    <p>Rating {{data1.vote_average}}</p>
+</div>
+
+
+<div>
+<button (click)="test2()">Trending Movie</button>
+</div>
+
+<div *ngFor="let data2 of trending">
+
+
+    <h1> <img src="https://image.tmdb.org/t/p/w185/{{data2.poster_path}}" > </h1>
+    <h1>Title {{data2.original_title}}</h1>
+    <p>Overview {{data2.overview}}</p>
+    <p>Relese Date {{data2.release_date}}</p>
+    <p>Language {{data2.original_language}}</p>
+</div>
+
+
