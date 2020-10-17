@@ -20,7 +20,7 @@ export class ShowmovieComponent implements OnInit {
 
   constructor(private generateapi: MovieService) { }
 
-  
+
 
   ngOnInit(): void {
     this.test();

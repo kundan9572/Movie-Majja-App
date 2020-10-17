@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { MovieService } from '../../services/movie.service';
 import { HomeComponent } from '../home/home.component';
-import {  HeaderComponent } from '../../layout/header/header.component';
+import { HeaderComponent } from '../../layout/header/header.component';
+import { Router } from '@angular/router';
+import { ShowmovieComponent} from '../showmovie/showmovie.component';
 
 
 @Component({
@@ -19,14 +21,17 @@ export class IndexComponent implements OnInit {
   show: any;
   location: any = ['Patna', 'Ranchi', 'Lucknow', 'Noida', 'Goa'];
 
-  constructor(private generateapi: MovieService) { }
+  constructor(private generateapi: MovieService, private router: Router) { }
+  // constructor(private router: Router){
+    
+  // }
 
   
 
   ngOnInit(): void {
     this.test();
-    this.test1();
-    this.test2();
+  //  this.test1();
+  //  this.test2();
    this.search(name);
   }
 
@@ -38,21 +43,25 @@ export class IndexComponent implements OnInit {
   }
   
 
-  test1() {
-    this.generateapi.getUpcoming().subscribe(data => {
-      this.upComingMovie = data.results;
-      console.log("Upcoming Movie", this.upComingMovie)
-     })
-        //  this.upComingMovie= this.generateapi.getUpcoming()
-        //  console.log("test",this.upComingMovie)
-  }
+  btnClick = function () {
+    this.router.navigateByUrl('/showmovie');
+  };
+
+  // test1() {
+  //   this.generateapi.getUpcoming().subscribe(data => {
+  //     this.upComingMovie = data.results;
+  //     console.log("Upcoming Movie", this.upComingMovie)
+  //    })
+  //       //  this.upComingMovie= this.generateapi.getUpcoming()
+  //       //  console.log("test",this.upComingMovie)
+  // }
   
-  test2() {
-    this.generateapi.getTrending().subscribe(data => {
-      this.trending = data.results;
-      console.log("Trending Movie", this.trending)
-    })
-  }
+  // test2() {
+  //   this.generateapi.getTrending().subscribe(data => {
+  //     this.trending = data.results;
+  //     console.log("Trending Movie", this.trending)
+  //   })
+  // }
 
   search(name: string) {
     this.generateapi.searchMovie(name).subscribe(data => {
