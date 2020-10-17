@@ -1,0 +1,42 @@
+body {
+  background-color: black;
+  height: 9000px;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: black;
+}
+
+.display {
+
+  border: 3px solid black;
+  background-color: black;
+}
+
+.images {
+  height: 300px;
+  width: 400px
+}
+
+.textcolor {
+  color: white;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace, cursive;
+  font-style: italic;
+}
+
+.heading {
+  font-size: 80px;
+  font-weight: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, curisve;
+  color: red;
+  font-style: oblique;
+  border: solid 2px green;
+  padding: 30px;
+  text-align: center;
+}

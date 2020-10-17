@@ -1,6 +1,6 @@
-<div>
-<button (click)="test()">Data</button>
-</div>
+
+<h1>Hello Kundan</h1>
+
 <div *ngFor="let data of mGeneres">
     <h1>Id {{data.id}}</h1>
     <p>Name {{data.name}}</p>
@@ -10,7 +10,7 @@
 <button (click)="test1()">Upcomin Movie</button>
 </div>
 <div *ngFor="let data1 of upComingMovie">
-    <img src="https://image.tmdb.org/t/p/w185/{{data1.poster_path}}" alt="pic">
+    <img src="https://image.tmdb.org/t/p/w185/{{data1.poster_path}}" alt="pic" class="imagesize">
     <h1>Id {{data1.id}}</h1>
     <h1>adult {{data1.adult}}</h1>
     <p>Title {{data1.title}}</p>
@@ -33,5 +33,7 @@
     <p>Relese Date {{data2.release_date}}</p>
     <p>Language {{data2.original_language}}</p>
 </div>
+
+
 
 

@@ -3,13 +3,12 @@ import { MovieService } from '../../services/movie.service';
 import { HomeComponent } from '../home/home.component';
 import {  HeaderComponent } from '../../layout/header/header.component';
 
-
 @Component({
-  selector: 'app-index',
-  templateUrl: './index.component.html',
-  styleUrls: ['./index.component.css']
+  selector: 'app-showmovie',
+  templateUrl: './showmovie.component.html',
+  styleUrls: ['./showmovie.component.css']
 })
-export class IndexComponent implements OnInit {
+export class ShowmovieComponent implements OnInit {
 
   name: string = '';
   mGeneres: any;
@@ -27,7 +26,7 @@ export class IndexComponent implements OnInit {
     this.test();
     this.test1();
     this.test2();
-   this.search(name);
+   // this.search(name);
   }
 
   test() {

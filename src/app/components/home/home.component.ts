@@ -20,12 +20,18 @@ export class HomeComponent implements OnInit {
     console.log('app comonent is working')
   }
 
-  ngOnInit(): void {
+   ngOnInit(): void {
+      this.test();
+      this.test1();
+      this.test2();
+     
   }
     
    test() {
-         this.mGeneres= this.generateapi.getGenres()
-         console.log("test",this.mGeneres)
+    this.generateapi.getGenres().subscribe(data => { 
+      this.mGeneres = data.genres;
+      console.log("Local Generes", this.mGeneres)
+     })
    }
   
   test1() {
@@ -39,5 +45,6 @@ export class HomeComponent implements OnInit {
   console.log("test",this.trending)
   }
 
-
+  //this.generateapi.getTrending().subscribe(data => this.show = data['results']); 
+    
 }

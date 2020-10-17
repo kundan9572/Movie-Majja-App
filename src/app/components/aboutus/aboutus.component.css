@@ -1,0 +1,13 @@
+.display{
+    padding-left: 150px ;
+    padding-bottom: 40px;
+    font-size: 40px; 
+    font-weight: 100px;
+    font-family: cursive;
+    color: black;
+}
+
+.image{
+    height: 400px;
+    width: 100%;
+}

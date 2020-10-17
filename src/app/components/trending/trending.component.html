@@ -1,0 +1,20 @@
+<body>
+        <h1 class="heading">Trending Movie</h1>
+
+<div class="container">
+<div class="card display" style="width: 50%;" *ngFor="let data1 of trending">
+  <img src="https://image.tmdb.org/t/p/w185/{{data1.poster_path}}" class="card-img-top images" alt="..." >
+  <div class="card-body">
+    <h2 class="card-title textcolor">{{data1.title}}</h2>
+        <h3 class="textcolor">Relese Date {{data1.release_date}}</h3>
+    <h4 class="textcolor">Adult {{data1.adult}}</h4>
+    <p class="textcolor">Overview {{data1.overview}}</p>
+  </div>
+  <div class="card-footer">
+                  <button type="button" class="btn btn-success">Book Ticket</button>
+
+                 <small class="text-muted" style="padding-left: 30px;">Last updated 3 mins ago</small>
+    </div>
+</div>
+</div>
+</body>
