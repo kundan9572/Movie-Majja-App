@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { MovieService } from './services/movie.service';
 import { FormsModule } from '@angular/forms';
-
+import {  RouterModule } from '@angular/router';
 
 // carousel Module
 //import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -13,8 +13,6 @@ import {MatIconModule} from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 //import {MatChipsModule} from '@angular/material/chips';
 //import { MatDatepickerModule } from '@angular/material/datepicker';
-
-
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -54,7 +52,12 @@ import { BookticketComponent } from './components/bookticket/bookticket.componen
     HttpClientModule,
     MatIconModule,
     MatCardModule,
-    FormsModule
+    FormsModule,
+
+    RouterModule.forRoot([
+        { path: '', component: IndexComponent },
+
+    ])
   
   ],
   providers: [MovieService ],

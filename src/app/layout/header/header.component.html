@@ -1,25 +1,61 @@
-<div>
-    <nav>
-        <ul>
-            <li><img src="../../../assets/d80321286525089fe6b5a5d4759d0efd.svg" alt="logo" class="logoimage"></li>
-            <li><img src="../../../assets/logo.png" alt="" class="logoimage"></li>
-            <li>
-                <ul class="leftside">
-                    <li><a class="#home" href="#home">Home</a></li>
-                    <li><a href="#news">News</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#about">Location</a></li>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><img src="../../../assets/logo1.jpg" alt="logo" height="60px" width="50%"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-                    <li >
-                        <select  class="selectopt" >
-                             <option value="loc" *ngFor= 'let loc of city' ngstyle.backgroundcolor="green">{{loc |uppercase}}</option>
-                        </select>
-                    </li>
-                    <li><a href="#contact">Login</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-</div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="popular">Popular</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Location
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#" *ngFor="let loc of location">{{ loc }}</a>
+        </div>
 
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Generes
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#" *ngFor="let generes of mGeneres">{{ generes.name }}</a>
+        </div>
+
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="aboutus" routerLinkActive="Active">About Us</a>
+      </li>
+
+    </ul>
+
+
+
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" #name1
+        [(ngModel)]="name">
+      <a routerLink="/home"><button class="btn btn-outline-success my-2 my-sm-0" type="submit"
+          (click)="search(name1.value)">Search</button>
+      </a>
+    </form>
+  </div>
+</nav>
+
+
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Data</li>
+  </ol>
+</nav>

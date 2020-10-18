@@ -15,17 +15,16 @@ import { from } from 'rxjs';
 
 
 const routes: Routes = [
-  // { path: '',   redirectTo: '/first-component', pathMatch: 'full' },
-  // { path: '', component: IndexComponent },
-  { path: 'home', component: HomeComponent },
+  { path: '', component: IndexComponent },
+  { path: 'home', component: IndexComponent },
   { path: 'body', component: BodyComponent },
   { path: 'header', component: HeaderComponent },
   { path: 'aboutus', component: AboutusComponent },
-  { path: ' bookticket', component: BookticketComponent },
-  { path: ' nowplaying', component: NowplayingComponent },
-  { path: ' popular', component: PopularComponent },
-  { path: ' showmovie', component: ShowmovieComponent },
-  { path: ' trending', component: TrendingComponent }
+  { path: 'showmovie', component: ShowmovieComponent },
+  { path: 'bookticket', component: BookticketComponent },
+  { path: 'nowplaying', component: NowplayingComponent },
+  { path: 'popular', component: PopularComponent },
+  { path: 'trending', component: TrendingComponent }
             
 ];
 
