@@ -46,7 +46,7 @@ export class MovieService {
     return this.http.get(this.urlPopular)
   }
 
-  searchMovie(name: string) {
+  searchMovie(name) {
     return this.http.get(this.baseurl + name + "&page=1&include_adult=false");
   }
 }

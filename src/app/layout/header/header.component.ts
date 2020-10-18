@@ -42,7 +42,7 @@ export class HeaderComponent implements OnInit {
 
   search(name: string) {
     this.generateapi.searchMovie(name).subscribe(data => {
-     // this.show = data.results;
+    //  this.show = data.results;
       console.log("Search Movie", this.show)
     })
   }
