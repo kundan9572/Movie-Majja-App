@@ -2,6 +2,11 @@
 
 ## TMDB to get the details of all the movie details .
 
+## Example:
+
+### Upcoming Movie
+### Latest Movie
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.2.
 
 ## Development server
