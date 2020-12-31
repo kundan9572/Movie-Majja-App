@@ -17,7 +17,7 @@
 ## TMDB Database
 ### Provide API to fetch all the movies details .
 
-## Example:
+## Movie Category Example:
 
 ### Upcoming Movies
 ### Latest Movies
