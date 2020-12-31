@@ -25,3 +25,4 @@
 ### Top Rated Movies
 ### Trending Movies
 
+### Further contribution needed to implement Book Ticket Method.
