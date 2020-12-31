@@ -6,7 +6,7 @@
 
 
 ## TMDB Database
-### To get the details of all the movie details .
+### Provide API to fetch all the movies details .
 
 ## Example:
 
