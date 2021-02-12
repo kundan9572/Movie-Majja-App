@@ -3,6 +3,7 @@
 ## Movie Details Listing site which displays movie details like all upcoming movies, popular movies, top-rated movies, etc. 
 ## This project is build using Angular and TMDb database.
 
+
 ## Allowed HTTPs requests:
 ### GET - To Get a resource or list of resource.
 ### PUT - To fetch resource.
